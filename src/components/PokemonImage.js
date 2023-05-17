@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate , useParams} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./GridPhoto.css";
 
 const useHandlePokemonClick = () => {
   const navigate = useNavigate();
-  const { id } = useParams();
 
 
   const handlePokemonClick = (pokemonUrl) => {
@@ -29,11 +28,11 @@ const PokemonImage = () => {
 
   return (
     <div className="grid-container">
-      {pokemonList.map((p) => (
-        <div key={p.name} className="pokemon" onClick={() => handlePokemonClick(p.url)}>
-          <h3>{p.id}</h3>
-          <h3>{p.name}</h3>
-          <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.url.split('/')[6]}.png`} alt={p.name} />
+      {pokemonList.map((pokemon) => (
+        <div key={pokemon.name} className="pokemon" onClick={() => handlePokemonClick(pokemon.url)}>
+          <h3>{pokemon.id}</h3>
+          <h3>{pokemon.name}</h3>
+          <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.split('/')[6]}.png`} alt={pokemon.name} />
         </div>
       ))}
     </div>

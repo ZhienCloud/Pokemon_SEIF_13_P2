@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./PokemonOnClick.css";
+import "./GridPhoto.css";
 import { useParams } from "react-router-dom";
+import dancingPikachu from "./Images/DancingPikachu.gif"
 
 const PokemonOnClick = () => {
   const { id } = useParams();
@@ -18,8 +19,8 @@ const PokemonOnClick = () => {
   }, [id]);
 
   if (selectedPokemon === null) {
-    console.log(selectedPokemon);
-    return <div>Loading...</div>;
+    // console.log(selectedPokemon);
+    return <div><img src={dancingPikachu} alt="Loading"/></div>;
   }
 
   return (

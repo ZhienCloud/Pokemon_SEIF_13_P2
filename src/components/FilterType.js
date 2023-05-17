@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./FilterType.css"
+import "./GridPhoto.css"
 
 const FilterByType = ({ filterType, filterValue, navigate }) => {
   console.log("filterType:", filterType);
@@ -103,24 +103,3 @@ const FilterByType = ({ filterType, filterValue, navigate }) => {
 
 
 export default FilterByType;
-    //   <div className="pokemon">
-    //     <h2>Pokémon List:</h2>
-    //     {pokemonList.length === 0 ? (
-    //       <p>No Pokémon found.</p>
-    //     ) : (
-    //       <ul className="grid-container">
-    //         {pokemonList.map((pokemon) => (
-    //           <li key={pokemon.id}>
-    //             <Link to={`/pokemon/${pokemon.id}`}>
-    //               <img
-    //                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-    //                 alt={pokemon.name}
-    //               />
-    //             </Link>
-    //             {pokemon.name}
-    //           </li>
-    //         ))}
-    //       </ul>
-    //     )}
-    //   </div>
-    // );

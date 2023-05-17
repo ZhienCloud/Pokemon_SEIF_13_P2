@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FilterByType from './FilterType';
 import PokemonSearch from './PokemonSearch';
+import "./GridPhoto.css" 
+import logo from './Images/Pokemon-Logo-PNG4.png';
+import pika from "./Images/FavPikachu.gif"
+
 
 const Home = () => {
   const [filterType, setFilterType] = useState('');
@@ -78,10 +82,11 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='search'>
+      <img src={logo} alt="Logo" className='logo'/>
       <form onSubmit={handleSubmit}>
         <label>
-          Filter by:
+          
           <select value={filterType} onChange={handleFilterTypeChange}>
             <option value="">Select Filter</option>
             <option value="name">Name</option>
@@ -97,7 +102,9 @@ const Home = () => {
   <PokemonSearch filterValue={filterValue} />
 )}
       <button onClick={handleAllPokemonClick}>ALL POKEMON</button>
-    </div>
+        <div> <img src={pika} alt="smiley" className='pika'/></div>
+        </div>
+
   );
 };
 
