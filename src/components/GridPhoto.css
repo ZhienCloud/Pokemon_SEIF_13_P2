@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+  grid-gap: 20px; 
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #050505;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pokemon:hover {
+  background-color: #e0e0e0;
+}
+
+.pokemon h3 {
+  margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.pokemon img {
+  width: 100%; 
+  height: auto;
+}
