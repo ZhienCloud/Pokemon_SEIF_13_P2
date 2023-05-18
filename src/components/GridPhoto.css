@@ -44,6 +44,8 @@
   width: 100%;
   box-sizing: border-box;
   color: white;
+  
+
 }
 
 .pokemon-details:hover {
@@ -62,6 +64,12 @@
   max-width: 200%; 
   max-height: 200%; 
 }
+
+.pokemon-details-text{
+  font-size: 100%;
+
+}
+
 
 .search {
   display: flex;
@@ -92,7 +100,7 @@
 
 .grid-container-species {
   /* display: grid; */
-  grid-template-columns: repeat(4, minmax(100px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
   grid-gap: 20px; 
   padding: 10px;
   display: flex;
@@ -101,8 +109,17 @@
 }
 
 .evolution-image {
-  width: 100% !important;
-  height: 100% !important;
+  width: auto!important;
+  height: auto !important;
+  text-align: center !important;
+}
+
+.h2Evo{
+  text-decoration: underline !important;
+  text-align: center !important;
+  padding: 5%;
+  width: 100%;
+
 }
 
 .buttonforHome {
