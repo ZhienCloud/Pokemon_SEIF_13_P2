@@ -47,7 +47,7 @@
 }
 
 .pokemon-details:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(224, 224, 224, 0.2); 
 }
 
 .pokemon-details h2 {
@@ -80,4 +80,39 @@
 
 .pika{
   padding:10px;
+}
+
+.type{
+  text-transform: capitalize;
+}
+
+.pokemon:hover {
+  background-color: rgb(173, 216, 230, 0.2);
+}
+
+.grid-container-species {
+  /* display: grid; */
+  grid-template-columns: repeat(4, minmax(100px, 1fr)); 
+  grid-gap: 20px; 
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.evolution-image {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.buttonforHome {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.loadingPikachu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

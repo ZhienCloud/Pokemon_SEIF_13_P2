@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./GridPhoto.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import dancingPikachu from "./Images/DancingPikachu.gif"
+import PokemonEvolution from "./Evolution";
 
 const PokemonOnClick = () => {
   const { id } = useParams();
@@ -20,7 +21,7 @@ const PokemonOnClick = () => {
 
   if (selectedPokemon === null) {
     // console.log(selectedPokemon);
-    return <div><img src={dancingPikachu} alt="Loading"/></div>;
+    return <div><img classname="loadingPikachu" src={dancingPikachu} alt="Loading"/></div>;
   }
 
   return (
@@ -32,9 +33,14 @@ const PokemonOnClick = () => {
       />
       <p>Height: {selectedPokemon.height}</p>
       <p>Weight: {selectedPokemon.weight}</p>
-      <p>
+      <p className="type">
         Type: {selectedPokemon.types.map((type) => type.type.name).join(", ")}
       </p>
+      <p className="evolution-image">Evolution: {<PokemonEvolution/>}</p>
+    
+      <Link to="/"><button>Home</button></Link>
+      <br></br>
+      <Link to="/AllPokemon"><button>ALL POKEMON</button></Link>
     </div>
   );
 };

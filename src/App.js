@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; 
-import PokemonImage from './components/PokemonImage';
+import PokemonImage from './components/AllPokemon';
 import PokemonOnClick from './components/PokemonOnClick';
 import Home from "./components/Home";
 

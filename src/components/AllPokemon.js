@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./GridPhoto.css";
 
 const useHandlePokemonClick = () => {
@@ -28,6 +28,7 @@ const PokemonImage = () => {
 
   return (
     <div className="grid-container">
+      <Link to="/" className="buttonforHome"><button>Home</button></Link>
       {pokemonList.map((pokemon) => (
         <div key={pokemon.name} className="pokemon" onClick={() => handlePokemonClick(pokemon.url)}>
           <h3>{pokemon.id}</h3>
