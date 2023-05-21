@@ -49,7 +49,7 @@ const Home = () => {
   const renderFilterValueInput = () => {
     if (filterType === 'type') {
       return (
-        <select value={filterValue} onChange={handleFilterValueChange}>
+        <select value={filterValue} onChange={handleFilterValueChange} className='filterform'>
           <option value="">Select Type</option>
           <option value="fire">Fire</option>
           <option value="water">Water</option>
@@ -76,6 +76,7 @@ const Home = () => {
           placeholder="Enter filter value"
           value={filterValue}
           onChange={handleFilterValueChange}
+          className='filterform'   
         />
       );
     }
@@ -87,13 +88,13 @@ const Home = () => {
       <form onSubmit={handleSubmit}>
         <label>
           
-          <select value={filterType} onChange={handleFilterTypeChange}>
+          <select value={filterType} onChange={handleFilterTypeChange} className='filterform'>
             <option value="">Select Filter</option>
             <option value="name">Name</option>
             <option value="type">Type</option>
           </select>
         </label>
-        {renderFilterValueInput()}
+        {renderFilterValueInput() }
       </form>
       {filterType === 'type' && filterValue && (
         <FilterByType filterType={filterType} filterValue={filterValue} navigate={navigate} />
@@ -101,9 +102,9 @@ const Home = () => {
     {filterType === 'name' && (
   <PokemonSearch filterValue={filterValue} />
 )}
-      <button onClick={handleAllPokemonClick}>ALL POKEMON</button>
+      <button onClick={handleAllPokemonClick} className='pokedexbutton'>Pokédex</button>
         <div> <img src={pika} alt="smiley" className='pika'/></div>
-        </div>
+  </div>
 
   );
 };

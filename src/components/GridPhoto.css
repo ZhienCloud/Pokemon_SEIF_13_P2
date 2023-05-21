@@ -1,8 +1,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr)); 
-  grid-gap: 20px; 
+  grid-gap: 10px; 
   padding: 10px;
+  margin-top: 40px;
 }
 
 .pokemon {
@@ -11,9 +12,8 @@
   align-items: center;
   justify-content: center;
   background-color: #050505;
-  margin-top: 20%;
-  padding: 1rem;
-  border-radius: 3rem;
+  margin-top: 30%;
+  border-radius: 1rem;
   cursor: pointer;
   width: 100%;
   color: white;
@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 8%;
   padding: 6rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -83,6 +83,18 @@
   padding: 10%;
 }
 
+.filterform{
+  font-size: 110%;
+  padding: 5px 10px;
+
+}
+
+.pokedexbutton {
+  font-size: 150%;
+  padding: 5px 10px;
+  margin-top: 2%;
+}
+
 .logo {
   width: 100%; 
   height: auto; 
@@ -111,8 +123,8 @@
 }
 
 .evolution-image {
-  width: auto!important;
-  height: auto !important;
+  width: auto !important;
+  height: 120% !important;
   text-align: center !important;
 }
 
@@ -158,13 +170,28 @@
   background: transparent;
   padding: 0;
   margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+
+
 }
 
-.navlogo img {
-  display: block;
-  width: 100%;
+.navlogopokedex {
+  cursor: grabbing;
+  max-width: 200px; /* Adjust the maximum width as needed */
   height: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+
 }
+
+
 
 .navlogo2{
   display: flex;
@@ -177,5 +204,18 @@
   background: transparent; 
   padding: 0; 
   margin: 0; 
+
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
 }
 

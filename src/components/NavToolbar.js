@@ -3,7 +3,7 @@ import logo from './Images/Pokemon-Logo-PNG4.png';
 import pokedex from "./Images/Pokedex.png"
 import "./GridPhoto.css";
 import wavingPikachu from "./Images/WavingPikachu.gif";
-
+import pokeball from "./Images/PokeBall.png"
 
 
 function NavigationBar() {
@@ -15,15 +15,15 @@ function NavigationBar() {
     return (
       <div>
         <nav className="navbar">
-            <button onClick={goBack}>
-                <img src={wavingPikachu} alt="" className="navlogo2"/>
-            </button>
+        <div onClick={goBack}>
+          <img src={wavingPikachu} alt="" className="navlogo2" />
+        </div>
           <Link to="/">
             <img src={logo} alt="" className="navlogo" />
           </Link>
   
           <Link to="/AllPokemon">
-            <img src={pokedex} alt="pokedex" className="navlogo" />
+            <img src={pokedex} alt="pokedex" className="navlogopokedex" />
           </Link>
         </nav>
       </div>

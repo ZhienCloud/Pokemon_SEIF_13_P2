@@ -3,7 +3,7 @@ import "./GridPhoto.css";
 import { useParams } from "react-router-dom";
 import dancingPikachu from "./Images/DancingPikachu.gif";
 import PokemonEvolution from "./Evolution";
-import NavigationBar from "./NavToolbar";
+
 
 
 const PokemonOnClick = () => {
