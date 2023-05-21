@@ -164,7 +164,7 @@
 
 .navlogo {
   cursor: grabbing;
-  max-width: 200px; /* Adjust the maximum width as needed */
+  max-width: 200px; 
   height: auto;
   border: none;
   background: transparent;
@@ -172,14 +172,11 @@
   margin: 0;
   align-items: center;
   justify-content: center;
-  margin-left: 25%;
-
-
 }
 
 .navlogopokedex {
   cursor: grabbing;
-  max-width: 200px; /* Adjust the maximum width as needed */
+  max-width: 200px; 
   height: auto;
   border: none;
   background: transparent;
@@ -187,10 +184,15 @@
   margin: 0;
   align-items: center;
   justify-content: center;
-  margin-left: 0;
-
 }
 
+.navbar .navlogo {
+  margin-left: 19%;
+}
+
+.navbar .navlogopokedex {
+  margin-left: 0;
+}
 
 
 .navlogo2{
