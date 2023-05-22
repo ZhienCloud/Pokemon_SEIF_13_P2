@@ -50,9 +50,9 @@
 
 }
 
-.pokemon-details:hover {
+/* .pokemon-details:hover {
   background-color: rgba(224, 224, 224, 0.2); 
-}
+} */
 
 .pokemon-details h2 {
   margin: 5px 0;
@@ -213,11 +213,28 @@
   .grid-container {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
+  .navlogo,
+  .navlogopokedex {
+    max-width: 150px;
+  }
+
+  .navbar .navlogo {
+    margin-left: 15%;
+  }
 }
+
 
 @media (max-width: 480px) {
   .grid-container {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .navlogo,
+  .navlogopokedex {
+    max-width: 120px;
+  }
+
+  .navbar .navlogo {
+    margin-left: 12%;
   }
 }
 
