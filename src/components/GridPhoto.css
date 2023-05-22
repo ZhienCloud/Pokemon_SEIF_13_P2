@@ -58,6 +58,7 @@
   margin: 5px 0;
   text-transform: capitalize;
   color: white;  
+  
 }
 
 .pokemon-details img {
@@ -119,6 +120,7 @@
   padding: 10px;
   display: flex;
   justify-content: center;
+  margin-top: -30%;
 
 }
 
@@ -126,6 +128,7 @@
   width: auto !important;
   height: 120% !important;
   text-align: center !important;
+  
 }
 
 .h2Evo{

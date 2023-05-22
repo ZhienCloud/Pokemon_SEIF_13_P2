@@ -46,15 +46,10 @@ const PokemonOnClick = () => {
       <p className="type">
         Type: {selectedPokemon.types.map((type) => type.type.name).join(", ")}
       </p>
-      <p className="pokemon-details-text">Height: {selectedPokemon.height}</p>
-      <p className="pokemon-details-text">Weight: {selectedPokemon.weight}</p>
-
-      <p>
-        <h2 className="h2Evo">Evolution</h2>
-        {<PokemonEvolution />}
-      </p>
-
- 
+      <p className="pokemon-details-text">Height: {(selectedPokemon.height)*10}cm</p>
+      <p className="pokemon-details-text">Weight: {(selectedPokemon.weight)/10}kg</p>
+      <p><h2 className="h2Evo">Evolution</h2>
+        {<PokemonEvolution />}</p>
     </div>
   </div>
   );

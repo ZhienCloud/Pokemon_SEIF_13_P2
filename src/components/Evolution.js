@@ -76,8 +76,7 @@ const PokemonEvolution = () => {
       className={`pokemon ${pokemon.speciesName === hoveredPokemon ? "hovered" : ""}`}
       onClick={() => handlePokemonClick(pokemon.pokemonUrl)}
       onMouseEnter={() => setHoveredPokemon(pokemon.speciesName)}
-      onMouseLeave={() => setHoveredPokemon(null)}
-    >
+      onMouseLeave={() => setHoveredPokemon(null)}>
       <h2>{pokemon.speciesName}</h2>
       <img className="evolution-image" src={pokemon.spriteUrl} alt={pokemon.speciesName} />
     </div>
