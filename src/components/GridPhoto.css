@@ -254,15 +254,16 @@
     max-width: 150px;
   }
 
-  .navbar .navlogo .pokeball {
+  .navbar .navlogo {
     margin-left: 15%;
   }
  .logo-pokedex{
   margin-top:10px;
  }
- .pokeball {
+ /* .pokeball {
   max-width: 5%;
-}
+  margin: 0 10px;
+} */
 
 }
 
@@ -308,10 +309,11 @@
   margin-bottom: 10px;
 }
 
-.pokeball {
+/* .pokeball {
   width: 5%;
   height: auto;
-}
+  margin: 0 10px;
+} */
 .SearchPokemon{
   width: 50%;
   height: auto;
