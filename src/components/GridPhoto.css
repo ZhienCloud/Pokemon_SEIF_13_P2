@@ -256,7 +256,15 @@
   .navbar .navlogo {
     margin-left: 15%;
   }
+ .logo-pokedex{
+  margin-top:10px;
+ }
+ .pokeball {
+  max-width: 5%;
 }
+
+}
+
 
 
 @media (max-width: 480px) {
@@ -271,6 +279,13 @@
   .navbar .navlogo {
     margin-left: 12%;
   }
+  .logo-pokedex{
+    margin-top:10px;
+   }
+   .pokeball {
+    max-width: 5%;
+  }
+  
 }
 
 .pokedexlogo-container {
