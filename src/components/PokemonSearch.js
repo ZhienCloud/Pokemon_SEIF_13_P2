@@ -25,12 +25,12 @@ const PokemonSearch = ({ filterValue }) => {
   }, [filterValue]);
 
   return (
-    <div className='pokemon'>
+    <div className="SearchPokemon">
       {pokemon && (
         <div>
           <h3>{pokemon.name}</h3>
           <Link to={`/pokemon/${pokemon.id}`}>
-            <img src={pokemon.sprites.front_default} alt={pokemon.name}  />
+            <img src={pokemon.sprites.front_default} alt={pokemon.name} className="SearchPokemon-img" />
           </Link>
         </div>
       )}

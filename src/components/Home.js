@@ -100,7 +100,7 @@ const Home = () => {
         <FilterByType filterType={filterType} filterValue={filterValue} navigate={navigate} />
       )}
     {filterType === 'name' && (
-  <PokemonSearch filterValue={filterValue} />
+  <PokemonSearch filterValue={filterValue} className="pokemonsearch"/>
 )}
       <button onClick={handleAllPokemonClick} className='pokedexbutton'>Pokédex</button>
         <div> <img src={pika} alt="smiley" className='pika'/></div>
