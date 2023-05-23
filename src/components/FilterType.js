@@ -86,7 +86,7 @@ const FilterByType = ({ filterType, filterValue, navigate }) => {
     return (
       <div className="grid-container">
       {pokemonList.map((pokemon) => (
-        <div key={pokemon.name} className="pokemon">
+        <div key={pokemon.name} className="pokemon2">
           <h3>{pokemon.name}</h3>
           <Link to={`/pokemon/${pokemon.id}`}>
           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} alt={pokemon.name} />
