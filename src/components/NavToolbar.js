@@ -18,11 +18,11 @@ function NavigationBar() {
         <div onClick={goBack}>
           <img src={wavingPikachu} alt="" className="navlogo2" />
         </div>
-        {/* <img src={pokeball} alt="" className="pokeball" /> */}
+        <img src={pokeball} alt="" className="pokeball" />
           <Link to="/">
             <img src={logo} alt="" className="navlogo" />
           </Link>
-        {/* <img src={pokeball} alt="" className="pokeball" /> */}
+        <img src={pokeball} alt="" className="pokeball" />
           <Link to="/AllPokemon">
             <img src={pokedex} alt="pokedex" className="navlogopokedex" />
           </Link>
