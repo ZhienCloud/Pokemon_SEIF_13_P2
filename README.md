@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+Mini Pokedex – SEIF 13 Project 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction
+Welcome to the Pokemon-Seif-13-P2 website! This website is a project created by Woon Zhien and serves as a hub for Pokemon enthusiasts to explore and interact with Pokemon-related information. Whether you're a long-time fan or a newcomer to the Pokemon world, this website provides a comprehensive resource for all things Pokemon.
 
-## Available Scripts
+Website Functionality
+The Pokemon-Seif-13-P2 website offers a range of features and functionality to enhance your Pokemon experience:
+1.	Pokedex: Access a complete Pokedex featuring various Pokemon species. Browse through the extensive collection, view their details, and learn about their characteristics (weight and height), including their type, and evolution chain.
+2.	Pokemon Search: Utilize the search functionality to quickly find information about a specific Pokemon. Simply enter the name of the Pokemon you're interested in, and the website will display its picture for you to click in to explore.
+3.	Interactive Pokemon Details: Each Pokemon has its dedicated page, showcasing a wealth of information. Interact with the page by clicking on the evolution chain to see its evolve Pokemon characteristics. 
+4.	Responsive Design: The website is designed to be responsive, providing an optimal viewing experience across various devices, including desktop computers, tablets, and mobile phones.
 
-In the project directory, you can run:
+Getting Started
+To get started with the Pokemon-Seif-13-P2 website, follow these steps:
+1.	Visit the website by clicking on the following link: Pokemon-Seif-13-P2.
+2.	Upon reaching the website, take a moment to familiarize yourself with the layout and navigation options available.
+3.	Explore the Pokedex section to discover the vast array of Pokemon species. Click on a Pokemon to access its detailed information page.
+4.	On a Pokemon's page, you can view its type, characteristics and evolution chain. Feel free to interact with the Pokemon's sprite.
+5.	Use the search bar at the top of the website to quickly find specific Pokemon by name.
 
-### `npm start`
+Technologies Used
+The Pokemon-Seif-13-P2 website has been developed using the following technologies and tools:
+•	CSS: The website is styled using CSS to provide an appealing and user-friendly interface.
+•	JavaScript: The website is powered by React.js
+•	Pokemon API: The website leverages a Pokemon API to retrieve accurate and up-to-date information about Pokemon species
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+VIEW ON README-PROJECT 2 
